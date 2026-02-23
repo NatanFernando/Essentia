@@ -5,10 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J&C Essentia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/tempLogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 
 <body>
     
+    <header>
+        <div class="page-header">
+      <div class="logo">
+        <p>J&C Essentia</p>
+      </div>
+      <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div id="navigation-bar" class="nav-bar">
+        <a href="#" class="active">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Nossa Equipe</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Contatos</a>
+      </div>
+
+      <div class="header-right"><button>Login</button></div>
+    </div>
+    </header>
+
+    <script>
+        function onMenuClick() {
+            var navbar = document.getElementById("navigation-bar");
+            var responsive_class_name = "responsive";
+
+            navbar.classList.toggle(responsive_class_name);
+        }
+    </script>
+
+    <section>
+
+        <div id="backgroundHeader">
+            <h5><em>Desde 2026</em></h5>
+        </div>
+
+        <h1>J&C ESSENTIA</h1>
+        <h2>SAÚDE MENTAL COORPORATIVA</h2>
+    </section>
+
 </body>
 
 </html>
