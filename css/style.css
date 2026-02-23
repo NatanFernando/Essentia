@@ -80,11 +80,6 @@ header{
   font-family: 'Roboto', sans-serif;
 }
 
-.nav-bar a:hover{
-  color: #779576;
-  text-decoration: underline;
-}
-
 .menu-icon{
   color: #3E4A2C;
   cursor: pointer;
@@ -102,14 +97,6 @@ button{
   border-radius: 25px;
 
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-}
-
-button:hover{
-  font-size: 0.85rem;
-  background-color: #3E4A2C;
-  color: white;
-  cursor: pointer;
-  padding: 0.55rem 0.8rem 0.55rem 0.8rem;
 }
 
 @media screen and (max-width: 750px){
@@ -140,7 +127,7 @@ button:hover{
 
 section{
     margin-top: 100px;
-    height: 2500px;
+    height: 500px;
 }
 
 h1{
@@ -176,4 +163,137 @@ h5{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+footer{
+  top: 20%;
+  left: 20%;
+  background: #3E4A2C;
+  border-radius: 5px;
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 2.5% 5% 2.5% 5%;
+}
+
+.footer-row .footer-col h4{
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.footer-col .links{
+  margin-top: 20px;
+}
+
+.footer-col .links li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.footer-col .links li a:hover{
+  color: #779576;
+  text-decoration: underline;
+}
+
+.footer-col p{
+  margin: 20px 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  max-width: 300px;
+}
+
+.footer-col form{
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input{
+  height: 40px;
+  border-radius: 6px;
+  background: #FAF6EE;
+  width: 100%;
+  outline: none;
+  border: 1px solid #779576;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #FAF6EE;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
 }
