@@ -80,6 +80,11 @@ header{
   font-family: 'Roboto', sans-serif;
 }
 
+.nav-bar a:hover{
+  color: #779576;
+  text-decoration: underline;
+}
+
 .menu-icon{
   color: #3E4A2C;
   cursor: pointer;
@@ -97,6 +102,14 @@ button{
   border-radius: 25px;
 
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+button:hover{
+  font-size: 0.85rem;
+  background-color: #3E4A2C;
+  color: white;
+  cursor: pointer;
+  padding: 0.55rem 0.8rem 0.55rem 0.8rem;
 }
 
 @media screen and (max-width: 750px){
